@@ -1,0 +1,192 @@
+/* text in player */
+* {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  color: #e1caec;
+  font-size: 20px;
+}
+/* text outside player  */
+body {
+  background: rgb(240, 227, 239);
+  margin: 200px;
+}
+.player {
+  height: 600px;
+  width: 320px;
+  border-radius: 40px;
+  background: linear-gradient(to bottom, #6890c0 0%, #111213 100%);
+  margin: 0 auto;
+  display: block;
+  border: solid 2px #5f78a5;
+}
+
+.top {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px;
+}
+
+.indicator {
+  font-size: 10px;
+}
+.small,
+.big,
+.big_play_pause {
+  border-radius: 50%;
+  height: 40px;
+  width: 40px;
+  background: radial-gradient(at bottom right, #292e35 0%, #292e34 80%);
+  border: none;
+  box-shadow: -7px -6px 10px 5px rgba(255, 255, 255, 0.04),
+    6px 6px 10px 5px rgb(39, 42, 47);
+  padding: 0;
+}
+
+.big,
+.big_play_pause {
+  height: 60px;
+  width: 60px;
+  box-shadow: -7px -6px 10px 5px rgba(255, 255, 255, 0.04),
+    7px 6px 10px 2px rgb(14, 15, 16);
+  background: radial-gradient(at bottom right, #17191e 0%, #1d2025 80%);
+}
+
+.big_play_pause {
+  background: radial-gradient(at top left, #c92711 0%, #ea570a 80%);
+}
+/* all other buttons */
+.inner_button,
+.center,
+.inner_button_big,
+.playpause {
+  border-radius: 50%;
+  height: 35px;
+  width: 35px;
+  background: radial-gradient(
+    at top left,
+    rgb(50, 53, 58) 0%,
+    rgb(23, 35, 66) 80%);
+  margin: 0 auto;
+  border: none;
+  display: flex;
+  justify-content: center;
+  vertical-align: middle;
+  /* align-self: center; */
+  align-items: center;
+}
+
+.inner_button_big {
+  height: 55px;
+  width: 55px;
+  background: radial-gradient(
+    at top left,
+    rgb(57, 59, 64) 0%,
+    rgb(12, 13, 16) 112%
+  );
+}
+
+.playpause {
+  background: radial-gradient(at bottom right, #c92711 0%, #ea570a 80%);
+  height: 55px;
+  width: 55px;
+}
+
+.small:active {
+  transform: translateY(2px);
+  background: radial-gradient(at top left, #292e35 0%, #292e34 80%);
+}
+.inner_button:active {
+  background: radial-gradient(
+    at bottom right,
+    rgba(46, 50, 58, 1) 0%,
+    rgba(28, 30, 35, 1) 80%
+  );
+}
+.big_play_pause:active {
+  transform: translateY(4px);
+  background: radial-gradient(at bottom right, #c92711 0%, #ea570a 80%);
+}
+.playpause:active {
+  background: radial-gradient(at top left, #c92711 0%, #ea570a 80%);
+}
+
+.big:active {
+  transform: translateY(4px);
+  background: radial-gradient(at top left, #17191e 0%, #1d2025 80%);
+}
+/* bottom icon when clicked */
+.inner_button_big:active {
+  background: radial-gradient(
+    at bottom right,
+    rgb(230, 135, 222) 0%,
+    rgb(181, 119, 184) 112%
+  );
+}
+/* image  */
+.center {
+  height: 200px;
+  width: 200px;
+  box-shadow: -15px -10px 15px 5px rgba(132, 179, 168, 0.04),
+    10px 10px 16px 8px rgb(24, 26, 29);
+}
+
+.album {
+  border-radius: 50%;
+  height: 205px;
+  width: 205px;
+  object-fit: cover;
+}
+
+.song_details {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.controls {
+  display: flex;
+  justify-content: space-around;
+  margin: 30px 30px 0px 30px;
+}
+
+.slider {
+  margin: 20px auto;
+  width: 70%;
+}
+/* side bar empty space color */
+.slider_bar {
+  background: black;
+  height: 5px;
+  border-radius: 5px;
+  margin: 0 auto;
+  box-shadow: inset -1px -1px gray, inset 1px 1px 1px -1px black;
+}
+/* side bar already played colored line */
+.inner_slider_bar {
+  width: 42.57%;
+  height: 5px;
+  background: radial-gradient(at top left, #52170f 10%, #9900ff 80%);
+  margin: 0px 1px;
+  border-radius: 5px;
+}
+/* music minutes */
+.time {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 7px;
+  margin-bottom: 5px;
+}
+/* bottom next outside the music box */
+.creddit {
+  line-height: 1.5;
+  margin: 20px;
+  color: #9900ff;
+}
+.creddit a {
+    color: #9900ff;
+}
+.creddit a:hover {
+    color: #613f6e;
+}
+.creddit a:visited {
+    color: #ea00ff;
+}
